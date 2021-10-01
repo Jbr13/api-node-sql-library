@@ -1,8 +1,8 @@
 import { Router } from "express";
-import routerInitialModule from "../modules/initialModule/routes";
+import authorRoutes from "../modules/author/infra/routes";
 
 const mainRouter = Router();
 
-mainRouter.use(routerInitialModule)
+mainRouter.use(authorRoutes);
 
 export default mainRouter;
