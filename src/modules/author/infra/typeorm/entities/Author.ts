@@ -3,7 +3,6 @@ import {
   CreateDateColumn,
   DeleteDateColumn,
   Entity,
-  PrimaryColumn,
   PrimaryGeneratedColumn,
   UpdateDateColumn,
 } from "typeorm";
@@ -22,7 +21,7 @@ export default class Author {
   @Column({ name: "published_books_number" })
   publishedBooksNumber!: number;
 
-  /*  @CreateDateColumn({
+  @CreateDateColumn({
     name: "created_at",
   })
   createdAt!: Date;
@@ -35,5 +34,5 @@ export default class Author {
   @DeleteDateColumn({
     name: "deleted_at",
   })
-  deletedAt?: Date;*/
+  deletedAt?: Date;
 }

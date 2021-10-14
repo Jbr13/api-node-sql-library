@@ -13,4 +13,4 @@ app.listen(3000, async () => {
   await createConnection();
 });
 
-app.use("/v1", mainRouter);
+app.use("/v1", mainRouter); 
